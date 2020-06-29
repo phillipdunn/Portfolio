@@ -262,7 +262,7 @@ main {
 
     i {
       opacity: 0;
-      font-size: 50px;
+      font-size: 25px;
       margin-top: 30px;
     }
   }
@@ -385,7 +385,7 @@ span img {
   }
 
   .portfolio article {
-    font-size: 17px;
+    font-size: 35px;
   }
 
   .about {
@@ -448,8 +448,8 @@ span img {
     padding: 3px;
   }
 
-  .portfolio article {
-    font-size: 25px;
+  .portfolio article i {
+    font-size: 38px;
   }
 
   .about {
@@ -488,6 +488,10 @@ span img {
     font-size: 29px;
     padding: 5px;
     height: 50px;
+  }
+
+  .portfolio article i {
+    font-size: 45px;
   }
 
   .about {
@@ -570,6 +574,10 @@ span img {
   }
 
   .social {
+    font-size: 50px;
+  }
+
+  .portfolio article i {
     font-size: 50px;
   }
 

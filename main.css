@@ -283,7 +283,7 @@ main section .btn-primary {
 
 .portfolio article i {
   opacity: 0;
-  font-size: 50px;
+  font-size: 25px;
   margin-top: 30px;
 }
 
@@ -416,7 +416,7 @@ span img {
     padding: 7px;
   }
   .portfolio article {
-    font-size: 17px;
+    font-size: 35px;
   }
   .about {
     -ms-grid-columns: 110px 185px;
@@ -471,8 +471,8 @@ span img {
     font-size: 26px;
     padding: 3px;
   }
-  .portfolio article {
-    font-size: 25px;
+  .portfolio article i {
+    font-size: 38px;
   }
   .about {
     -ms-grid-rows: 150px 100px 60px 60px 60px 60px;
@@ -506,6 +506,9 @@ span img {
     font-size: 29px;
     padding: 5px;
     height: 50px;
+  }
+  .portfolio article i {
+    font-size: 45px;
   }
   .about {
     -ms-grid-columns: 220px 500px;
@@ -576,6 +579,9 @@ span img {
     font-size: 50px;
   }
   .social {
+    font-size: 50px;
+  }
+  .portfolio article i {
     font-size: 50px;
   }
   .about {
