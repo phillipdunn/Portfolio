@@ -12,5 +12,11 @@ const sendMail =() => {
   window.location.href = link;
 };
 
-document.getElementById('burger').addEventListener('click', menu);
+const disableScrolling = () =>{
+  let x=window.scrollX;
+  let y=window.scrollY;
+  window.onscroll=function(){window.scrollTo(x, y);};
+}
+
+document.getElementById('burger').addEventListener('click', menu, disableScrolling);
 document.getElementById('mail').addEventListener('click', sendMail);

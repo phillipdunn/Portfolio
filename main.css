@@ -114,7 +114,7 @@ i:hover {
 
 .open li {
   list-style: none;
-  margin: 10px;
+  margin: 20px;
 }
 
 .open i {
@@ -504,6 +504,13 @@ span img {
 }
 
 @media only screen and (min-width: 768px) {
+  main, nav, .redline {
+    height: 1000px;
+    overflow: hidden;
+  }
+  nav {
+    padding-left: 13px;
+  }
   main section h1 {
     font-size: 72px;
   }
@@ -523,25 +530,11 @@ span img {
     font-size: 38px;
   }
   .portfolio {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 100px 100px 100px;
-        grid-template-rows: 100px 100px 100px;
-    gap: 20px;
-    margin: 20px;
-    margin-top: 50px;
-    margin-left: 10px;
-        grid-template-areas: "phil phil phil" "frontend frontend frontend" "project1 project2 ." "project3 project4 ." "project5 project6 .";
+    -ms-grid-rows: 100px 120px 200px;
+        grid-template-rows: 100px 120px 200px;
   }
   .portfolio article {
-    border: 2px solid whitesmoke;
-    height: 15vh;
-    padding: 5px;
-    text-align: center;
-  }
-  .about {
-    -ms-grid-rows: 150px 100px 60px 60px 60px 60px;
-        grid-template-rows: 150px 100px 60px 60px 60px 60px;
+    height: 27vh;
   }
   .about h3 {
     font-size: 25px;
@@ -554,14 +547,6 @@ span img {
     font-size: 40px;
   }
   .about {
-    display: -ms-grid;
-    display: grid;
-    margin: 20px;
-    margin-top: 50px;
-    margin-left: 10px;
-    -webkit-column-gap: 10px;
-            column-gap: 10px;
-    row-gap: 20px;
         grid-template-areas: "phil phil background" "frontend frontend background" "skills skillsp backgroundp " "domain domainp backgroundp" "experience experiencep backgroundp" "education educationp backgroundp";
   }
 }
@@ -586,17 +571,24 @@ span img {
   .portfolio article i {
     font-size: 45px;
   }
+  .portfolio {
+    -ms-grid-rows: 100px 120px 270px;
+        grid-template-rows: 100px 120px 270px;
+        grid-template-areas: "phil phil phil" "frontend frontend frontend" "project1 project2 ." "project3 project4 ." "project5 project6 .";
+  }
   .about {
-    -ms-grid-columns: 220px 500px;
-        grid-template-columns: 220px 500px;
-    -ms-grid-rows: 150px 100px 60px 60px 60px 60px;
-        grid-template-rows: 150px 100px 60px 60px 60px 60px;
+    -ms-grid-columns: 195px 430px;
+        grid-template-columns: 195px 430px;
+    -ms-grid-rows: 150px 120px 80px 80px 80px 80px;
+        grid-template-rows: 150px 120px 80px 80px 80px 80px;
   }
   .about h3 {
+    padding-top: 20px;
     font-size: 27px;
   }
   .about p {
     font-size: 22px;
+    padding-top: 15px;
   }
   .about p i {
     margin-top: 4px;
@@ -634,12 +626,8 @@ span img {
     font-size: 65px;
   }
   .portfolio {
-    -ms-grid-rows: 150px 100px 180px;
-        grid-template-rows: 150px 100px 180px;
-  }
-  .about {
-    -ms-grid-rows: 150px 100px 60px 60px 60px 60px;
-        grid-template-rows: 150px 100px 60px 60px 60px 60px;
+    -ms-grid-rows: 150px 120px 300px;
+        grid-template-rows: 150px 120px 300px;
   }
   main section .btn-primary {
     font-size: 32px;
@@ -661,10 +649,10 @@ span img {
     font-size: 50px;
   }
   .about {
-    -ms-grid-columns: 220px 600px;
-        grid-template-columns: 220px 600px;
-    -ms-grid-rows: 150px 120px 70px 70px 70px 70px;
-        grid-template-rows: 150px 120px 70px 70px 70px 70px;
+    -ms-grid-columns: 250px 550px;
+        grid-template-columns: 250px 550px;
+    -ms-grid-rows: 150px 120px 90px 90px 90px 90px;
+        grid-template-rows: 150px 120px 90px 90px 90px 90px;
   }
   .about h3 {
     font-size: 40px;
