@@ -1,6 +1,8 @@
 const menu = () => {
   document.getElementById('burger').classList.toggle('change');
   document.querySelector('nav').classList.toggle('open');
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${window.scrollY}px`;
 };
 
 const sendMail =() => {
@@ -12,11 +14,5 @@ const sendMail =() => {
   window.location.href = link;
 };
 
-const disableScrolling = () =>{
-  let x=window.scrollX;
-  let y=window.scrollY;
-  window.onscroll=function(){window.scrollTo(x, y);};
-}
-
-document.getElementById('burger').addEventListener('click', menu, disableScrolling);
+document.getElementById('burger').addEventListener('click', menu);
 document.getElementById('mail').addEventListener('click', sendMail);
