@@ -14,5 +14,10 @@ const sendMail =() => {
   window.location.href = link;
 };
 
+const touch = () => {
+  document.querySelectorAll('article').classList.toggle('tocuh');
+};
+
+document .querySelectorAll('article').addEventListener('click touch',touch)
 document.getElementById('burger').addEventListener('click', menu);
 document.getElementById('mail').addEventListener('click', sendMail);
