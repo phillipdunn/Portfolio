@@ -1,3 +1,20 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "bracketPairColorizer.activeScopeCSS": [
+
+        "borderStyle : solid",
+        "borderWidth : 1px",
+        "borderColor : {color}; opacity: 0.5"
+    ],
+    
+"pairodoro.player1": {
+  "name": "NiallJP",
+  "color": "#F53C98"
+},
+"pairodoro.player2": {
+  "name": "Phil",
+  "color": "#FFCC00"
+},
+"pairodoro.seconds": 600,
+      
 }

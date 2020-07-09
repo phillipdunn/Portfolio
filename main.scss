@@ -262,11 +262,11 @@ main {
   }
 }
 
-article:hover i, article:active i {
+article:hover i, article:focus i, article:active i {
   opacity: 1;
 }
 
-article:hover, article:active {
+article:hover, article:focus, article:active {
   background-image: url('./Images/portfolio-black.png');
   background-size: cover;
   background-position: center ;
