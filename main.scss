@@ -279,18 +279,23 @@ article:hover, article:focus, article:active {
 }
 
 .project1 {
-  background-image: url('./Images/project1pic.png');
+  background-image: url('./Images/Intergr8.png');
   background-size: cover;
   background-position: center ;
 }
 
 .project2 {
+  background-image: url('./Images/project1pic.png');
+  background-size: cover;
+  background-position: center ;
+}
+.project3 {
   background-image: url('./Images/morse.png');
   background-size: cover;
   background-position: center ;
 }
 
-.project3, .project4, .project5, .project6 {
+.project4, .project5, .project6 {
   background-image: url('./Images/Coming-Soon.jpg');
   background-size: cover;
   background-position: center;

@@ -281,29 +281,41 @@ main section .btn-primary {
   padding: 10px;
 }
 
-article:hover i {
+article:hover i, article:focus i, article:active i {
   opacity: 1;
 }
 
-article:hover {
+article:hover, article:focus, article:active {
+  background-image: url("./Images/portfolio-black.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.touch {
   background-image: url("./Images/portfolio-black.png");
   background-size: cover;
   background-position: center;
 }
 
 .project1 {
-  background-image: url("./Images/project1pic.png");
+  background-image: url("./Images/Intergr8.png");
   background-size: cover;
   background-position: center;
 }
 
 .project2 {
+  background-image: url("./Images/project1pic.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.project3 {
   background-image: url("./Images/morse.png");
   background-size: cover;
   background-position: center;
 }
 
-.project3, .project4, .project5, .project6 {
+.project4, .project5, .project6 {
   background-image: url("./Images/Coming-Soon.jpg");
   background-size: cover;
   background-position: center;
