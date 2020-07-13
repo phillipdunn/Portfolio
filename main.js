@@ -16,9 +16,3 @@ const sendMail =() => {
 
 document.getElementById('burger').addEventListener('click', menu);
 document.getElementById('mail').addEventListener('click', sendMail);
-
-// const touch = () => {
-//   document.getElementsByTagName('article').classList.toggle('touch');
-// };
-
-// document.getElementsByTagName('article').addEventListener('click touch',touch)

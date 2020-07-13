@@ -304,18 +304,24 @@ article:hover, article:focus, article:active {
 }
 
 .project2 {
-  background-image: url("./Images/project1pic.png");
+  background-image: url("./Images/Punk IPA.png");
   background-size: cover;
   background-position: center;
 }
 
 .project3 {
+  background-image: url("./Images/project1pic.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.project4 {
   background-image: url("./Images/morse.png");
   background-size: cover;
   background-position: center;
 }
 
-.project4, .project5, .project6 {
+.project5, .project6 {
   background-image: url("./Images/Coming-Soon.jpg");
   background-size: cover;
   background-position: center;
