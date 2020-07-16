@@ -432,10 +432,19 @@ article:hover i, article:focus i, article:active i {
   opacity: 1;
 }
 
+.info {
+  display: none;
+}
+
 article:hover, article:focus, article:active {
   background-image: url("./Images/portfolio-black.png");
   background-size: cover;
   background-position: center;
+}
+
+.info {
+  display: unset;
+  font-size: 12px;
 }
 
 .touch {
