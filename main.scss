@@ -8,7 +8,7 @@ $tn-height: 7vh;
 $btn-width: 27vw;
 $btn-height: 40px;
 $primary-border: 2px solid $primary-color;
-$mobile-height: 1100px;
+$mobile-height: 1600px;
 $breakpoint-l-mobile: 425px;
 $breakpoint-s-tablet: 550px;
 $breakpoint-tablet: 768px;
@@ -80,15 +80,15 @@ nav {
 .redline {
   min-width: 1vw;
   height: $mobile-height;
-  background-color: red;
+  background-color: rgb(199, 39, 39);
 }
 
 a:hover {
-  color: red;
+  color: rgb(199, 39, 39);
 }
 
 i:hover {
-  color: red;
+  color: rgb(199, 39, 39);
 }
 
 .open {
@@ -154,7 +154,8 @@ main {
   background-color: $tertiary-color;
   height: $mobile-height;
   width: 100vw;
-
+  overflow: hidden;
+  
   section {
     display: grid;
     grid-template-rows: 150px 150px;
@@ -201,12 +202,133 @@ main {
       width: $btn-width;
       height: $btn-height;
       text-align: center;
+
+      &:hover {
+        color:rgb(199, 39, 39);
+      }
     }
   }
 }   
 
-.portfoliomian{
-  height: 800;
+.about {
+  display: grid;
+  grid-template-rows: 150px 60px 70px 70px 70px 70px 280px;
+  grid-template-columns: 100px 170px;
+  margin: 20px;
+  margin-top: 50px;
+  margin-left: 10px;
+  column-gap: 10px;
+  row-gap: 20px;
+  grid-template-areas: 
+    "phil phil"
+    "frontend frontend"
+    "skills skillsp"
+    "domain domainp"
+    "experience experiencep"
+    "education educationp "
+    "client clientp"
+    "background background"
+    "backgroundp backgroundp" 
+    
+}
+  h3 {
+    border: $primary-border;
+    font-size: 17px;
+    padding-top: 22px;
+    text-align: center;
+  }
+
+    .skills {
+      grid-area: skills;
+    }
+
+    .domain {
+      grid-area: domain;
+    }
+
+    .experience {
+      grid-area: experience;
+    }
+
+    .education {
+      grid-area: education;
+    }
+
+    .background {
+      grid-area: background;
+    }
+  
+    .client {
+      grid-area: client;
+      padding-top: 130px;
+    }
+
+    .skillsp {
+      grid-area: skillsp;
+    }
+
+    .domainp {
+      grid-area: domainp;
+    }
+
+    .experiencep {
+      grid-area: experiencep;
+    }
+
+    .educationp {
+      grid-area: educationp;
+    }
+
+    .backgroundp{
+      grid-area: backgroundp;
+    }
+
+    .cleintp{
+      grid-area: clientp;
+    }
+
+  p i {
+    font-size: 30px;
+    pointer-events: none;
+  }
+
+span {
+  display: flex;
+  align-items: center;
+}
+
+span img {
+  margin: 1px;
+}
+
+#bgc {
+  height: $about-tn-height;
+  width: $about-tn-width;
+  border-radius: 3px;
+}
+
+#fd {
+  height: $about-tn-height;
+  width: $about-tn-width;
+  border-radius: 3px;
+}
+
+#pwc {
+  height: $about-tn-height;
+  width: $about-tn-width;
+  border-radius: 3px;
+}
+
+#kip {
+  height: $about-tn-height;
+  width: $about-tn-width;
+  border-radius: 3px;
+}
+
+#profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 3px;
 }
 
 .portfolio {
@@ -306,115 +428,6 @@ article:hover, article:focus, article:active {
   background-size: cover;
   background-position: center;
 }
-
-.about {
-  display: grid;
-  grid-template-rows: 150px 60px 60px 60px 60px 60px 250px;
-  grid-template-columns: 100px 170px;
-  margin: 20px;
-  margin-top: 50px;
-  margin-left: 10px;
-  column-gap: 10px;
-  row-gap: 20px;
-  grid-template-areas: 
-    "phil phil"
-    "frontend frontend"
-    "skills skillsp"
-    "domain domainp"
-    "experience experiencep"
-    "education educationp "
-    "background background"
-    "backgroundp backgroundp";
-}
-  h3 {
-    border: $primary-border;
-    font-size: 17px;
-    padding: 15px;
-    text-align: center;
-  }
-    .skills {
-      grid-area: skills;
-    }
-
-    .domain {
-      grid-area: domain;
-    }
-
-    .experience {
-      grid-area: experience;
-    }
-
-    .education {
-      grid-area: education;
-    }
-
-    .background {
-      grid-area: background;
-    }
-
-    .skillsp {
-      grid-area: skillsp;
-    }
-
-    .domainp {
-      grid-area: domainp;
-    }
-
-    .experiencep {
-      grid-area: experiencep;
-    }
-
-    .educationp {
-      grid-area: educationp;
-    }
-
-    .backgroundp{
-      grid-area: backgroundp;
-    }
-
-  p i {
-    font-size: 30px;
-    pointer-events: none;
-  }
-
-span {
-  display: flex;
-  align-items: center;
-}
-
-span img {
-  margin: 1px;
-}
-
-#bgc {
-  height: $about-tn-height;
-  width: $about-tn-width;
-  border-radius: 3px;
-}
-
-#fd {
-  height: $about-tn-height;
-  width: $about-tn-width;
-  border-radius: 3px;
-}
-
-#pwc {
-  height: $about-tn-height;
-  width: $about-tn-width;
-  border-radius: 3px;
-}
-
-#kip {
-  height: $about-tn-height;
-  width: $about-tn-width;
-  border-radius: 3px;
-}
-
-#profile {
-  width: 200px;
-  height: 200px;
-  border-radius: 3px;
-}
 @media only screen and (min-width: $breakpoint-l-mobile) {
   main section .btn-primary {
     font-size: 17px;
@@ -431,11 +444,23 @@ span img {
   }
 
   .about {
-    grid-template-columns: 110px 185px;
+    grid-template-columns: 120px 185px;
 
     h3 {
       font-size: 20px;
-      padding: 10px;
+      padding-top: 17px;
+    }
+
+    .domainp{
+      padding-top: 5px;
+    }
+
+    .client{
+      padding-top: 120px;;
+    }
+
+    .clientp{
+      padding-top: 10px;
     }
   }
 
@@ -465,6 +490,14 @@ span img {
       font-size: 22px;
     }
 
+    .domainp{
+      padding-top: 10px;
+    }
+
+    .clientp{
+      padding-top: 30px;
+    }
+
     p {
       font-size: 18px;
     }
@@ -481,11 +514,11 @@ span img {
  }
 
   main section h1 {
-    font-size: 72px;
+    font-size: 52px;
   }
 
   main section h2 {
-    font-size: 65px;
+    font-size: 45px;
     margin-bottom: 10px;
   }
 
@@ -505,19 +538,24 @@ span img {
 
   .portfolio {
     grid-template-rows: 100px 120px 200px;
-     
+
     article {
-      height: 27vh;
+      height: 20vh;
     }
   }
   .about {
+      grid-template-columns: 120px 250px 240px;
 
     h3 {
-      font-size: 25px;
+      font-size: 20px;
+    }
+
+    .clientp{
+      padding-top: 10px;
     }
 
     p {
-      font-size: 20px;
+      font-size: 19px;
     }
 
     p i {
@@ -532,10 +570,16 @@ span img {
       "skills skillsp backgroundp "
       "domain domainp backgroundp"
       "experience experiencep backgroundp"
-      "education educationp backgroundp";
+      "education educationp backgroundp"
+      " client clientp clientp";
   }
 }
 @media only screen and (min-width: $breakpoint-laptop) {
+  main, nav, .redline{
+    height:1100px;
+    overflow: hidden;
+  }
+
   main section h1 {
     font-size: 75px;
   }
@@ -571,17 +615,16 @@ span img {
   }
 
   .about {
-    grid-template-columns: 195px 430px;
-    grid-template-rows: 150px 120px 80px 80px 80px 80px;
+    grid-template-columns: 180px 345px 300px;
+    grid-template-rows: 150px 100px 80px 80px 80px 80px;
 
     h3 {
-      padding-top: 20px;
-      font-size: 27px;
+      font-size: 25px;
     }
 
     p {
       font-size: 22px;
-      padding-top: 15px;
+      padding-top: 5px;
     }
 
     p i {
@@ -619,6 +662,11 @@ span img {
   }
 }
 @media only screen and (min-width: $breakpoint-l-laptop) {
+  main, nav, .redline{
+    height:1200px;
+    overflow: hidden;
+  }
+
   main section h1 {
     font-size: 95px;
   }
@@ -628,7 +676,7 @@ span img {
   }
 
   .portfolio {
-    grid-template-rows: 150px 120px 300px;
+    grid-template-rows: 150px 150px 400px;
   }
   
   main section .btn-primary {
@@ -649,6 +697,10 @@ span img {
 
   .social {
     font-size: 50px;
+  }
+
+  .portfolio article {
+    height:30vh;
   }
 
   .portfolio article i {

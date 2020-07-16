@@ -17,7 +17,7 @@ body {
 nav {
   background-color: #1d2227;
   font-size: 14px;
-  height: 1100px;
+  height: 1600px;
   width: 60px;
 }
 
@@ -66,16 +66,16 @@ nav #logo {
 
 .redline {
   min-width: 1vw;
-  height: 1100px;
-  background-color: red;
+  height: 1600px;
+  background-color: #c72727;
 }
 
 a:hover {
-  color: red;
+  color: #c72727;
 }
 
 i:hover {
-  color: red;
+  color: #c72727;
 }
 
 .open {
@@ -153,8 +153,9 @@ main {
   background-position: left;
   background-attachment: fixed;
   background-color: #536a8e;
-  height: 1100px;
+  height: 1600px;
   width: 100vw;
+  overflow: hidden;
 }
 
 main section {
@@ -215,8 +216,154 @@ main section .btn-primary {
   text-align: center;
 }
 
-.portfoliomian {
-  height: 800;
+main section .btn-primary:hover {
+  color: #c72727;
+}
+
+.about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 150px 60px 70px 70px 70px 70px 280px;
+      grid-template-rows: 150px 60px 70px 70px 70px 70px 280px;
+  -ms-grid-columns: 100px 170px;
+      grid-template-columns: 100px 170px;
+  margin: 20px;
+  margin-top: 50px;
+  margin-left: 10px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 20px;
+      grid-template-areas: "phil phil" "frontend frontend" "skills skillsp" "domain domainp" "experience experiencep" "education educationp " "client clientp" "background background" "backgroundp backgroundp";
+}
+
+h3 {
+  border: 2px solid whitesmoke;
+  font-size: 17px;
+  padding-top: 22px;
+  text-align: center;
+}
+
+.skills {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: skills;
+}
+
+.domain {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: domain;
+}
+
+.experience {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: experience;
+}
+
+.education {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: education;
+}
+
+.background {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: background;
+}
+
+.client {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: client;
+  padding-top: 130px;
+}
+
+.skillsp {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: skillsp;
+}
+
+.domainp {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: domainp;
+}
+
+.experiencep {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: experiencep;
+}
+
+.educationp {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: educationp;
+}
+
+.backgroundp {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: backgroundp;
+}
+
+.cleintp {
+  -ms-grid-row: 7;
+  -ms-grid-column: 2;
+  grid-area: clientp;
+}
+
+p i {
+  font-size: 30px;
+  pointer-events: none;
+}
+
+span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+span img {
+  margin: 1px;
+}
+
+#bgc {
+  height: 30px;
+  width: 30px;
+  border-radius: 3px;
+}
+
+#fd {
+  height: 30px;
+  width: 30px;
+  border-radius: 3px;
+}
+
+#pwc {
+  height: 30px;
+  width: 30px;
+  border-radius: 3px;
+}
+
+#kip {
+  height: 30px;
+  width: 30px;
+  border-radius: 3px;
+}
+
+#profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 3px;
 }
 
 .portfolio {
@@ -327,139 +474,6 @@ article:hover, article:focus, article:active {
   background-position: center;
 }
 
-.about {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 150px 60px 60px 60px 60px 60px 250px;
-      grid-template-rows: 150px 60px 60px 60px 60px 60px 250px;
-  -ms-grid-columns: 100px 170px;
-      grid-template-columns: 100px 170px;
-  margin: 20px;
-  margin-top: 50px;
-  margin-left: 10px;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-  row-gap: 20px;
-      grid-template-areas: "phil phil" "frontend frontend" "skills skillsp" "domain domainp" "experience experiencep" "education educationp " "background background" "backgroundp backgroundp";
-}
-
-h3 {
-  border: 2px solid whitesmoke;
-  font-size: 17px;
-  padding: 15px;
-  text-align: center;
-}
-
-.skills {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: skills;
-}
-
-.domain {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: domain;
-}
-
-.experience {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: experience;
-}
-
-.education {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  grid-area: education;
-}
-
-.background {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: background;
-}
-
-.skillsp {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: skillsp;
-}
-
-.domainp {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  grid-area: domainp;
-}
-
-.experiencep {
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
-  grid-area: experiencep;
-}
-
-.educationp {
-  -ms-grid-row: 6;
-  -ms-grid-column: 2;
-  grid-area: educationp;
-}
-
-.backgroundp {
-  -ms-grid-row: 8;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: backgroundp;
-}
-
-p i {
-  font-size: 30px;
-  pointer-events: none;
-}
-
-span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-span img {
-  margin: 1px;
-}
-
-#bgc {
-  height: 30px;
-  width: 30px;
-  border-radius: 3px;
-}
-
-#fd {
-  height: 30px;
-  width: 30px;
-  border-radius: 3px;
-}
-
-#pwc {
-  height: 30px;
-  width: 30px;
-  border-radius: 3px;
-}
-
-#kip {
-  height: 30px;
-  width: 30px;
-  border-radius: 3px;
-}
-
-#profile {
-  width: 200px;
-  height: 200px;
-  border-radius: 3px;
-}
-
 @media only screen and (min-width: 425px) {
   main section .btn-primary {
     font-size: 17px;
@@ -473,12 +487,21 @@ span img {
     font-size: 35px;
   }
   .about {
-    -ms-grid-columns: 110px 185px;
-        grid-template-columns: 110px 185px;
+    -ms-grid-columns: 120px 185px;
+        grid-template-columns: 120px 185px;
   }
   .about h3 {
     font-size: 20px;
-    padding: 10px;
+    padding-top: 17px;
+  }
+  .about .domainp {
+    padding-top: 5px;
+  }
+  .about .client {
+    padding-top: 120px;
+  }
+  .about .clientp {
+    padding-top: 10px;
   }
   span img {
     margin: 3px;
@@ -504,6 +527,12 @@ span img {
   .about h3 {
     font-size: 22px;
   }
+  .about .domainp {
+    padding-top: 10px;
+  }
+  .about .clientp {
+    padding-top: 30px;
+  }
   .about p {
     font-size: 18px;
   }
@@ -518,10 +547,10 @@ span img {
     padding: 8px;
   }
   main section h1 {
-    font-size: 72px;
+    font-size: 52px;
   }
   main section h2 {
-    font-size: 65px;
+    font-size: 45px;
     margin-bottom: 10px;
   }
   main section .btn-primary {
@@ -540,24 +569,35 @@ span img {
         grid-template-rows: 100px 120px 200px;
   }
   .portfolio article {
-    height: 27vh;
+    height: 20vh;
+  }
+  .about {
+    -ms-grid-columns: 120px 250px 240px;
+        grid-template-columns: 120px 250px 240px;
   }
   .about h3 {
-    font-size: 25px;
+    font-size: 20px;
+  }
+  .about .clientp {
+    padding-top: 10px;
   }
   .about p {
-    font-size: 20px;
+    font-size: 19px;
   }
   .about p i {
     margin-top: 10px;
     font-size: 40px;
   }
   .about {
-        grid-template-areas: "phil phil background" "frontend frontend background" "skills skillsp backgroundp " "domain domainp backgroundp" "experience experiencep backgroundp" "education educationp backgroundp";
+        grid-template-areas: "phil phil background" "frontend frontend background" "skills skillsp backgroundp " "domain domainp backgroundp" "experience experiencep backgroundp" "education educationp backgroundp" " client clientp clientp";
   }
 }
 
 @media only screen and (min-width: 1024px) {
+  main, nav, .redline {
+    height: 1100px;
+    overflow: hidden;
+  }
   main section h1 {
     font-size: 75px;
   }
@@ -583,18 +623,17 @@ span img {
         grid-template-areas: "phil phil phil" "frontend frontend frontend" "project1 project2 ." "project3 project4 ." "project5 project6 .";
   }
   .about {
-    -ms-grid-columns: 195px 430px;
-        grid-template-columns: 195px 430px;
-    -ms-grid-rows: 150px 120px 80px 80px 80px 80px;
-        grid-template-rows: 150px 120px 80px 80px 80px 80px;
+    -ms-grid-columns: 180px 345px 300px;
+        grid-template-columns: 180px 345px 300px;
+    -ms-grid-rows: 150px 100px 80px 80px 80px 80px;
+        grid-template-rows: 150px 100px 80px 80px 80px 80px;
   }
   .about h3 {
-    padding-top: 20px;
-    font-size: 27px;
+    font-size: 25px;
   }
   .about p {
     font-size: 22px;
-    padding-top: 15px;
+    padding-top: 5px;
   }
   .about p i {
     margin-top: 4px;
@@ -625,6 +664,10 @@ span img {
 }
 
 @media only screen and (min-width: 1440px) {
+  main, nav, .redline {
+    height: 1200px;
+    overflow: hidden;
+  }
   main section h1 {
     font-size: 95px;
   }
@@ -632,8 +675,8 @@ span img {
     font-size: 65px;
   }
   .portfolio {
-    -ms-grid-rows: 150px 120px 300px;
-        grid-template-rows: 150px 120px 300px;
+    -ms-grid-rows: 150px 150px 400px;
+        grid-template-rows: 150px 150px 400px;
   }
   main section .btn-primary {
     font-size: 32px;
@@ -650,6 +693,9 @@ span img {
   }
   .social {
     font-size: 50px;
+  }
+  .portfolio article {
+    height: 30vh;
   }
   .portfolio article i {
     font-size: 50px;
