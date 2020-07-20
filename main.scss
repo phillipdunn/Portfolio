@@ -14,8 +14,10 @@ $breakpoint-s-tablet: 550px;
 $breakpoint-tablet: 768px;
 $breakpoint-laptop: 1024px;
 $breakpoint-l-laptop: 1440px;
-$about-tn-height: 30px;
-$about-tn-width: 30px;
+$about-tn-height: 50px;
+$about-tn-width: 50px;
+$about-lapt-height: 95px;
+$about-lapt-width: 95px;
 
 * {
   margin: 0;
@@ -154,11 +156,11 @@ main {
   background-color: $tertiary-color;
   height: $mobile-height;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
   
   section {
     display: grid;
-    grid-template-rows: 150px 150px;
+    grid-template-rows: 5fr 4fr 1fr;
     gap: 20px;
     margin: 20px;
     margin-top: 50px;
@@ -212,9 +214,8 @@ main {
 
 .about {
   display: grid;
-  grid-template-rows: 150px 60px 70px 70px 70px 70px 280px;
-  grid-template-columns: 100px 170px;
-  margin: 20px;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 3fr 3fr;
+  grid-template-columns: 1fr 3fr;
   margin-top: 50px;
   margin-left: 10px;
   column-gap: 10px;
@@ -228,12 +229,11 @@ main {
     "education educationp "
     "client clientp"
     "background background"
-    "backgroundp backgroundp" 
-    
+    "backgroundp backgroundp" ;   
 }
   h3 {
     border: $primary-border;
-    font-size: 17px;
+    font-size: 15px;
     padding-top: 22px;
     text-align: center;
   }
@@ -260,15 +260,17 @@ main {
   
     .client {
       grid-area: client;
-      padding-top: 130px;
+      padding-top: 90px;
     }
 
     .skillsp {
       grid-area: skillsp;
+      padding-top:20px;
     }
 
     .domainp {
       grid-area: domainp;
+      padding-top:15px;
     }
 
     .experiencep {
@@ -277,13 +279,14 @@ main {
 
     .educationp {
       grid-area: educationp;
+      padding-top:5px;
     }
 
     .backgroundp{
       grid-area: backgroundp;
     }
 
-    .cleintp{
+    .clientp{
       grid-area: clientp;
     }
 
@@ -331,9 +334,14 @@ span img {
   border-radius: 3px;
 }
 
+span img{
+  margin:3px;
+}
+
 .portfolio {
   display: grid;
-  grid-template-rows: 150px 60px 170px 170px;
+  grid-template-rows: 3fr 2fr 3fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin: 20px;
   margin-top: 50px;
@@ -384,28 +392,24 @@ span img {
   }
 }
 
-article:hover i, article:focus i, article:active i {
+.info {
+display:none;
+ 
+}
+
+article:hover i {
   opacity: 1;
 }
-.info {
-  display: none;
-}
 
-article:hover, article:focus, article:active {
+article:hover {
   background-image: url('./Images/portfolio-black.png');
   background-size: cover;
   background-position: center ;
-}
 
-.info {
-  display: unset ;
-  font-size: 12px;
-}
-
-.touch {
-  background-image: url('./Images/portfolio-black.png');
-  background-size: cover;
-  background-position: center ;
+  .info {
+    display: unset;
+    font-size: 12px;
+  }
 }
 
 .project1 {
@@ -452,10 +456,9 @@ article:hover, article:focus, article:active {
   }
 
   .about {
-    grid-template-columns: 120px 185px;
 
     h3 {
-      font-size: 20px;
+      font-size: 22px;
       padding-top: 17px;
     }
 
@@ -492,31 +495,29 @@ article:hover, article:focus, article:active {
   }
 
   .about {
-    grid-template-columns: 130px 280px;
-
+   
     h3 {
-      font-size: 22px;
+      font-size: 24px;
     }
 
     .domainp{
       padding-top: 10px;
     }
 
+    .client{
+      padding-top: 70px;
+    }
+
     .clientp{
-      padding-top: 30px;
+      padding-top: 10px;
     }
 
     p {
-      font-size: 18px;
+      font-size: 19px;
     }
   }
 }
 @media only screen and (min-width: $breakpoint-tablet) {
- main, nav, .redline{
-   height:1000px;
-   overflow: hidden;
- }
-
  nav #burger{
   padding: 8px;
  }
@@ -545,50 +546,46 @@ article:hover, article:focus, article:active {
   }
 
   .portfolio {
-    grid-template-rows: 100px 120px 200px;
+    gap: 25px;
 
     article {
-      height: 20vh;
+      height: 8em;
+      margin-top: 20px;
     }
   }
   .about {
-      grid-template-columns: 120px 250px 240px;
 
     h3 {
-      font-size: 20px;
+      font-size: 25px;
+    }
+
+    .skillsp {
+      padding-top: 5px;
+    }
+
+    .client{
+      padding-top: 80px;
     }
 
     .clientp{
       padding-top: 10px;
     }
-
+  
     p {
-      font-size: 19px;
+      font-size: 22px;
     }
 
     p i {
-      margin-top: 10px;
-      font-size: 40px;
+      font-size: 60px;
     }
   }
-  .about {
-    grid-template-areas: 
-      "phil phil background"
-      "frontend frontend background"
-      "skills skillsp backgroundp "
-      "domain domainp backgroundp"
-      "experience experiencep backgroundp"
-      "education educationp backgroundp"
-      " client clientp clientp";
-  }
+  
 }
 @media only screen and (min-width: $breakpoint-laptop) {
-  main, nav, .redline{
-    height:1100px;
-    overflow: hidden;
-  }
-
-  main section h1 {
+  main, .redline, nav{
+    height: 1800px;
+  } 
+   main section h1 {
     font-size: 75px;
   }
   
@@ -612,33 +609,64 @@ article:hover, article:focus, article:active {
     font-size: 45px;
   }
 
-  .portfolio{
-      grid-template-rows: 100px 120px 270px;
-      grid-template-areas: 
-      "phil phil phil"
-      "frontend frontend frontend"
-      "project1 project2 ."
-      "project3 project4 ."
-      "project5 project6 .";
-  }
-
-  .about {
-    grid-template-columns: 180px 345px 300px;
-    grid-template-rows: 150px 100px 80px 80px 80px 80px;
-
+   .about {
+    height:100%;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 150px 150px 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas: 
+      "phil phil background"
+      "frontend frontend background"
+      "skills skillsp backgroundp "
+      "domain domainp backgroundp"
+      "experience experiencep backgroundp"
+      "education educationp backgroundp"
+      " client clientp .";
+      
     h3 {
-      font-size: 25px;
+      padding-top: 80px;
+      font-size: 35px;
     }
 
     p {
-      font-size: 22px;
-      padding-top: 5px;
+      font-size: 28px;
     }
 
     p i {
-      margin-top: 4px;
-      font-size: 50px;
+      font-size: 90px;
+      padding-top: 10px;
     }
+
+    .domainp{
+      padding-top: 60px;    
+    }
+
+    .educationp{
+      padding-top: 50px;    
+    }
+
+    .client{
+      padding-top: 120px;    
+    }
+  }
+
+  #bgc {
+    width: $about-lapt-height;
+    height: $about-lapt-width;
+  }
+
+  #pwc {
+    height: $about-lapt-height;
+    width: $about-lapt-width;
+  }
+
+  #fd {
+    width: $about-lapt-height;
+    height: $about-lapt-width;
+  }
+  
+  #kip {
+    height: $about-lapt-height;
+    width: $about-lapt-width;
   }
 
   nav ul {
@@ -648,32 +676,37 @@ article:hover, article:focus, article:active {
   .social {
     font-size: 40px;
   }
-
-  #bgc {
-    height: 50px;
-    width: 50px;
+  .client{
+    padding-top: 150px;
+  }
+  .background{
+    padding-top: 450px;
+  }
+  
+  .backgroundp{
+    padding-top: 250px;
+  }
   }
 
-  #pwc {
-    height: 50px;
-    width: 50px;
-  }
+  .portfolio{
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 150px 150px 1fr 1fr;
+      grid-template-areas: 
+      "phil phil phil"
+      "frontend frontend frontend"
+      "project1 project2 ."
+      "project3 project4 ."
+      "project5 project6 .";
 
-  #fd {
-    height: 50px;
-    width: 50px;
+      article {
+        height: 10em;
+      }
   }
-
-  #kip {
-    height: 50px;
-    width: 50px;
-  }
-}
 @media only screen and (min-width: $breakpoint-l-laptop) {
-  main, nav, .redline{
-    height:1200px;
-    overflow: hidden;
-  }
+  // main, nav, .redline{
+  //   height:1200px;
+  //   overflow: hidden;
+  // }
 
   main section h1 {
     font-size: 95px;
@@ -681,10 +714,6 @@ article:hover, article:focus, article:active {
   
   main section h2 {
     font-size: 65px;
-  }
-
-  .portfolio {
-    grid-template-rows: 150px 150px 400px;
   }
   
   main section .btn-primary {
@@ -707,49 +736,42 @@ article:hover, article:focus, article:active {
     font-size: 50px;
   }
 
-  .portfolio article {
-    height:30vh;
-  }
+  .portfolio {
 
-  .portfolio article i {
-    font-size: 50px;
+    article {
+      height:30vh;
+    }
+
+    article i {
+      font-size: 50px;
+    }
   }
 
   .about {
-    grid-template-columns: 250px 550px;
-    grid-template-rows: 150px 120px 90px 90px 90px 90px;
-
+ 
     h3 {
+      padding-top: 60px;
       font-size: 40px;
     }
 
     p {
-      font-size: 30px;
+      font-size: 36px;
     }
 
-    p i {
-      margin-top: 5px;
-      font-size: 60px;
+    .skills {
+      padding-top: 70px;
     }
-  }
-  
-  #bgc {
-    height: 55px;
-    width: 55px;
-  }
-  
-  #pwc {
-    height: 55px;
-    width: 55px;
-  }
-  
-  #fd {
-    height: 55px;
-    width: 55px;
-  }
-  
-  #kip {
-    height: 55px;
-    width: 55px;
+
+    .domainp {
+      padding-top: 40px;
+    }
+
+    .educationp {
+      padding-top: 20px;
+    }
+
+    .client {
+      padding-top: 200px;
+    }
   }
 }
