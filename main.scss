@@ -16,8 +16,8 @@ $breakpoint-laptop: 1024px;
 $breakpoint-l-laptop: 1440px;
 $about-tn-height: 50px;
 $about-tn-width: 50px;
-$about-lapt-height: 95px;
-$about-lapt-width: 95px;
+$about-lapt-height: 90px;
+$about-lapt-width: 90px;
 
 * {
   margin: 0;
@@ -346,6 +346,7 @@ span img{
   margin: 20px;
   margin-top: 50px;
   margin-left: 10px;
+ 
   grid-template-areas: 
     "phil phil "
     "frontend frontend "
@@ -355,9 +356,13 @@ span img{
 
   article {
     border: $primary-border;
-    height: 150px;
-    padding: 5px;
+    height: 20vh;
+    width: 35vw;
+    padding: 20px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;  
+    flex-direction: row;
   
     .project1 {
       grid-area: project1;
@@ -384,9 +389,8 @@ span img{
     }
 
     i {
-      opacity: 0;
+      display: none;
       font-size: 25px;
-      margin-top: 35px;
       padding: 10px;
     }
   }
@@ -394,11 +398,10 @@ span img{
 
 .info {
 display:none;
- 
 }
 
 article:hover i {
-  opacity: 1;
+  display: initial;
 }
 
 article:hover {
@@ -451,12 +454,7 @@ article:hover {
     padding: 7px;
   }
 
-  .portfolio article {
-    font-size: 35px;
-  }
-
   .about {
-
     h3 {
       font-size: 22px;
       padding-top: 17px;
@@ -467,13 +465,21 @@ article:hover {
     }
 
     .client{
-      padding-top: 120px;;
+      padding-top: 70px;;
     }
 
     .clientp{
       padding-top: 10px;
     }
   }
+
+  .portfolio article i {
+    font-size: 30px;
+  }
+
+  article:hover .info {
+    font-size: 14px;
+    }
 
   span img {
     margin: 3px;
@@ -491,8 +497,19 @@ article:hover {
   }
 
   .portfolio article {
-    font-size: 23px;
+    height: 180px;
+    padding-top: 30px;
+    justify-content: center;
+
+    i {
+      font-size: 40px;
+    }
+    
   }
+
+  article:hover .info {
+    font-size: 20px;
+    }
 
   .about {
    
@@ -541,18 +558,22 @@ article:hover {
     padding: 3px;
   }
 
-  .portfolio article i {
-    font-size: 38px;
-  }
-
   .portfolio {
     gap: 25px;
 
     article {
-      height: 8em;
-      margin-top: 20px;
+      height: 32vh;
+      padding-top: 50px;
+
+      i{ 
+        font-size: 40px;
+      }
     }
   }
+  article:hover .info {
+    font-size: 23px;
+    }
+
   .about {
 
     h3 {
@@ -564,11 +585,19 @@ article:hover {
     }
 
     .client{
-      padding-top: 80px;
+      padding-top: 85px;
     }
 
     .clientp{
+      padding-top: 14px;
+    }
+
+    .background{
       padding-top: 10px;
+    }
+
+    .backgroundp{
+      padding-top: 15px;
     }
   
     p {
@@ -579,12 +608,12 @@ article:hover {
       font-size: 60px;
     }
   }
-  
+ 
 }
 @media only screen and (min-width: $breakpoint-laptop) {
-  main, .redline, nav{
-    height: 1800px;
-  } 
+  // main, .redline, nav{
+  //   height: 1800px;
+  // } 
    main section h1 {
     font-size: 75px;
   }
@@ -605,10 +634,6 @@ article:hover {
     height: 50px;
   }
 
-  .portfolio article i {
-    font-size: 45px;
-  }
-
    .about {
     height:100%;
     grid-template-columns: 0.5fr 1fr 1fr;
@@ -623,7 +648,7 @@ article:hover {
       " client clientp .";
       
     h3 {
-      padding-top: 80px;
+      padding-top: 60px;
       font-size: 35px;
     }
 
@@ -632,20 +657,20 @@ article:hover {
     }
 
     p i {
-      font-size: 90px;
+      font-size: 70px;
       padding-top: 10px;
     }
 
     .domainp{
-      padding-top: 60px;    
-    }
-
-    .educationp{
       padding-top: 50px;    
     }
 
+    .educationp{
+      padding-top: 30px;    
+    }
+
     .client{
-      padding-top: 120px;    
+      padding-top: 140px;    
     }
   }
 
@@ -686,7 +711,7 @@ article:hover {
   .backgroundp{
     padding-top: 250px;
   }
-  }
+  
 
   .portfolio{
       grid-template-columns: 1fr 1fr 1fr;
@@ -699,15 +724,20 @@ article:hover {
       "project5 project6 .";
 
       article {
-        height: 10em;
+        height: 16em;
+        width:16em;
       }
-  }
-@media only screen and (min-width: $breakpoint-l-laptop) {
-  // main, nav, .redline{
-  //   height:1200px;
-  //   overflow: hidden;
-  // }
 
+      article i {
+        font-size: 50px;
+      }
+
+      article:hover .info {
+        font-size: 25px;
+        }
+  }
+}
+@media only screen and (min-width: $breakpoint-l-laptop) {
   main section h1 {
     font-size: 95px;
   }
@@ -739,12 +769,17 @@ article:hover {
   .portfolio {
 
     article {
-      height:30vh;
+      height: 20em;
+      width: 20em;
     }
 
     article i {
-      font-size: 50px;
+      font-size: 55px;
     }
+
+    article:hover .info {
+      font-size: 30px;
+      }
   }
 
   .about {

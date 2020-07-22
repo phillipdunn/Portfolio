@@ -173,7 +173,7 @@ main section {
 main section h1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: phil;
   font-size: 60px;
 }
@@ -181,7 +181,7 @@ main section h1 {
 main section h2 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: frontend;
   font-size: 30px;
 }
@@ -388,9 +388,19 @@ span img {
 
 .portfolio article {
   border: 2px solid whitesmoke;
-  height: 150px;
-  padding: 5px;
+  height: 20vh;
+  width: 35vw;
+  padding: 20px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .portfolio article .project1 {
@@ -430,9 +440,8 @@ span img {
 }
 
 .portfolio article i {
-  opacity: 0;
+  display: none;
   font-size: 25px;
-  margin-top: 35px;
   padding: 10px;
 }
 
@@ -441,7 +450,7 @@ span img {
 }
 
 article:hover i {
-  opacity: 1;
+  display: initial;
 }
 
 article:hover {
@@ -494,9 +503,6 @@ article:hover .info {
     font-size: 17px;
     padding: 7px;
   }
-  .portfolio article {
-    font-size: 35px;
-  }
   .about h3 {
     font-size: 22px;
     padding-top: 17px;
@@ -505,10 +511,16 @@ article:hover .info {
     padding-top: 5px;
   }
   .about .client {
-    padding-top: 120px;
+    padding-top: 70px;
   }
   .about .clientp {
     padding-top: 10px;
+  }
+  .portfolio article i {
+    font-size: 30px;
+  }
+  article:hover .info {
+    font-size: 14px;
   }
   span img {
     margin: 3px;
@@ -525,7 +537,17 @@ article:hover .info {
     padding: 7px;
   }
   .portfolio article {
-    font-size: 23px;
+    height: 180px;
+    padding-top: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio article i {
+    font-size: 40px;
+  }
+  article:hover .info {
+    font-size: 20px;
   }
   .about h3 {
     font-size: 24px;
@@ -563,15 +585,18 @@ article:hover .info {
     font-size: 26px;
     padding: 3px;
   }
-  .portfolio article i {
-    font-size: 38px;
-  }
   .portfolio {
     gap: 25px;
   }
   .portfolio article {
-    height: 8em;
-    margin-top: 20px;
+    height: 32vh;
+    padding-top: 50px;
+  }
+  .portfolio article i {
+    font-size: 40px;
+  }
+  article:hover .info {
+    font-size: 23px;
   }
   .about h3 {
     font-size: 25px;
@@ -580,10 +605,16 @@ article:hover .info {
     padding-top: 5px;
   }
   .about .client {
-    padding-top: 80px;
+    padding-top: 85px;
   }
   .about .clientp {
+    padding-top: 14px;
+  }
+  .about .background {
     padding-top: 10px;
+  }
+  .about .backgroundp {
+    padding-top: 15px;
   }
   .about p {
     font-size: 22px;
@@ -594,9 +625,6 @@ article:hover .info {
 }
 
 @media only screen and (min-width: 1024px) {
-  main, .redline, nav {
-    height: 1800px;
-  }
   main section h1 {
     font-size: 75px;
   }
@@ -613,9 +641,6 @@ article:hover .info {
     padding: 5px;
     height: 50px;
   }
-  .portfolio article i {
-    font-size: 45px;
-  }
   .about {
     height: 100%;
     -ms-grid-columns: 0.5fr 1fr 1fr;
@@ -625,40 +650,40 @@ article:hover .info {
         grid-template-areas: "phil phil background" "frontend frontend background" "skills skillsp backgroundp " "domain domainp backgroundp" "experience experiencep backgroundp" "education educationp backgroundp" " client clientp .";
   }
   .about h3 {
-    padding-top: 80px;
+    padding-top: 60px;
     font-size: 35px;
   }
   .about p {
     font-size: 28px;
   }
   .about p i {
-    font-size: 90px;
+    font-size: 70px;
     padding-top: 10px;
   }
   .about .domainp {
-    padding-top: 60px;
-  }
-  .about .educationp {
     padding-top: 50px;
   }
+  .about .educationp {
+    padding-top: 30px;
+  }
   .about .client {
-    padding-top: 120px;
+    padding-top: 140px;
   }
   #bgc {
-    width: 95px;
-    height: 95px;
+    width: 90px;
+    height: 90px;
   }
   #pwc {
-    height: 95px;
-    width: 95px;
+    height: 90px;
+    width: 90px;
   }
   #fd {
-    width: 95px;
-    height: 95px;
+    width: 90px;
+    height: 90px;
   }
   #kip {
-    height: 95px;
-    width: 95px;
+    height: 90px;
+    width: 90px;
   }
   nav ul {
     font-size: 40px;
@@ -675,18 +700,23 @@ article:hover .info {
   .backgroundp {
     padding-top: 250px;
   }
-}
-
-.portfolio {
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 150px 150px 1fr 1fr;
-      grid-template-rows: 150px 150px 1fr 1fr;
-      grid-template-areas: "phil phil phil" "frontend frontend frontend" "project1 project2 ." "project3 project4 ." "project5 project6 .";
-}
-
-.portfolio article {
-  height: 10em;
+  .portfolio {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 150px 150px 1fr 1fr;
+        grid-template-rows: 150px 150px 1fr 1fr;
+        grid-template-areas: "phil phil phil" "frontend frontend frontend" "project1 project2 ." "project3 project4 ." "project5 project6 .";
+  }
+  .portfolio article {
+    height: 16em;
+    width: 16em;
+  }
+  .portfolio article i {
+    font-size: 50px;
+  }
+  .portfolio article:hover .info {
+    font-size: 25px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -713,10 +743,14 @@ article:hover .info {
     font-size: 50px;
   }
   .portfolio article {
-    height: 30vh;
+    height: 20em;
+    width: 20em;
   }
   .portfolio article i {
-    font-size: 50px;
+    font-size: 55px;
+  }
+  .portfolio article:hover .info {
+    font-size: 30px;
   }
   .about h3 {
     padding-top: 60px;
