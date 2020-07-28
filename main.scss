@@ -400,11 +400,11 @@ span img{
 display:none;
 }
 
-article:hover i {
+article:hover article:focus article:active i {
   display: initial;
 }
 
-article:hover {
+article:hover article:focus article:active {
   background-image: url('./Images/portfolio-black.png');
   background-size: cover;
   background-position: center ;
@@ -477,7 +477,7 @@ article:hover {
     font-size: 30px;
   }
 
-  article:hover .info {
+  article:hover article:focus article:active .info {
     font-size: 14px;
     }
 
@@ -507,7 +507,7 @@ article:hover {
     
   }
 
-  article:hover .info {
+  article:hover article:focus article:active .info {
     font-size: 20px;
     }
 
@@ -570,7 +570,7 @@ article:hover {
       }
     }
   }
-  article:hover .info {
+  article:hover article:focus article:active .info {
     font-size: 23px;
     }
 
@@ -732,7 +732,7 @@ article:hover {
         font-size: 50px;
       }
 
-      article:hover .info {
+      article:hover article:focus article:active .info {
         font-size: 25px;
         }
   }
