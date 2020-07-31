@@ -400,18 +400,18 @@ span img{
 display:none;
 }
 
-article:hover article:focus article:active i {
+article:hover i {
   display: initial;
 }
 
-article:hover article:focus article:active {
+article:hover {
   background-image: url('./Images/portfolio-black.png');
   background-size: cover;
   background-position: center ;
 
   .info {
     display: unset;
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
@@ -422,23 +422,29 @@ article:hover article:focus article:active {
 }
 
 .project2 {
-  background-image: url('./Images/Punk\ IPA.png');
+  background-image: url('./Images/Coming-Soon.jpg');
   background-size: cover;
   background-position: center ;
 }
 
 .project3 {
+  background-image: url('./Images/Punk\ IPA.png');
+  background-size: cover;
+  background-position: center ;
+}
+
+.project4 {
   background-image: url('./Images/project1pic.png');
   background-size: cover;
   background-position: center ;
 }
-.project4 {
+.project5 {
   background-image: url('./Images/morse.png');
   background-size: cover;
   background-position: center ;
 }
 
-.project5, .project6 {
+.project6 {
   background-image: url('./Images/Coming-Soon.jpg');
   background-size: cover;
   background-position: center;
@@ -477,7 +483,7 @@ article:hover article:focus article:active {
     font-size: 30px;
   }
 
-  article:hover article:focus article:active .info {
+  article:hover .info {
     font-size: 14px;
     }
 
@@ -507,7 +513,7 @@ article:hover article:focus article:active {
     
   }
 
-  article:hover article:focus article:active .info {
+  article:hover .info {
     font-size: 20px;
     }
 
@@ -570,7 +576,7 @@ article:hover article:focus article:active {
       }
     }
   }
-  article:hover article:focus article:active .info {
+  article:hover .info {
     font-size: 23px;
     }
 
@@ -732,7 +738,7 @@ article:hover article:focus article:active {
         font-size: 50px;
       }
 
-      article:hover article:focus article:active .info {
+      article:hover .info {
         font-size: 25px;
         }
   }
