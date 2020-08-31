@@ -16,3 +16,5 @@ const sendMail =() => {
 
 document.getElementById('burger').addEventListener('click', menu);
 document.getElementById('mail').addEventListener('click', sendMail);
+
+
