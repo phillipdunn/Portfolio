@@ -383,7 +383,7 @@ span img {
   margin: 20px;
   margin-top: 50px;
   margin-left: 10px;
-      grid-template-areas: "phil phil " "frontend frontend " "project1 project2" "project3 project4" "project5 project6" "project7 project 8";
+      grid-template-areas: "phil phil " "frontend frontend " "project1 project2" "project3 project4" "project5 project6" "project7 project 8" "project9 .";
 }
 
 .portfolio article {
@@ -447,6 +447,12 @@ span img {
 
 .portfolio article .project8 {
   grid-area: project8;
+}
+
+.portfolio article .project9 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: project9;
 }
 
 .portfolio article i {
@@ -517,6 +523,12 @@ article:hover .info {
 }
 
 .project8 {
+  background-image: url("./Images/Coming-Soon.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.project9 {
   background-image: url("./Images/Coming-Soon.jpg");
   background-size: cover;
   background-position: center;

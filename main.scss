@@ -352,7 +352,8 @@ span img {
     "project1 project2"
     "project3 project4"
     "project5 project6"
-    "project7 project 8";
+    "project7 project 8"
+    "project9 .";
 
   article {
     border: $primary-border;
@@ -394,6 +395,10 @@ span img {
 
     .project8 {
       grid-area: project8;
+    }
+
+    .project9 {
+      grid-area: project9;
     }
 
     i {
@@ -465,6 +470,12 @@ article:hover {
 }
 
 .project8 {
+  background-image: url("./Images/Coming-Soon.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.project9 {
   background-image: url("./Images/Coming-Soon.jpg");
   background-size: cover;
   background-position: center;
