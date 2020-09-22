@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Fjalla One';
+  font-family: "Fjalla One";
   color: whitesmoke;
   text-decoration: none;
 }
@@ -383,7 +383,7 @@ span img {
   margin: 20px;
   margin-top: 50px;
   margin-left: 10px;
-      grid-template-areas: "phil phil " "frontend frontend " "project1 project2" "project3 project4" "project5 project6";
+      grid-template-areas: "phil phil " "frontend frontend " "project1 project2" "project3 project4" "project5 project6" "project7 project 8";
 }
 
 .portfolio article {
@@ -437,6 +437,16 @@ span img {
   -ms-grid-row: 5;
   -ms-grid-column: 2;
   grid-area: project6;
+}
+
+.portfolio article .project7 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: project7;
+}
+
+.portfolio article .project8 {
+  grid-area: project8;
 }
 
 .portfolio article i {
@@ -496,6 +506,18 @@ article:hover .info {
 
 .project6 {
   background-image: url("./Images/spaceships.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.project7 {
+  background-image: url("./Images/dashboard.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.project8 {
+  background-image: url("./Images/Coming-Soon.jpg");
   background-size: cover;
   background-position: center;
 }

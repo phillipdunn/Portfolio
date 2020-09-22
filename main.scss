@@ -1,4 +1,3 @@
-
 $primary-color: whitesmoke;
 $secondary-color: #1d2227;
 $tertiary-color: #536a8e;
@@ -23,7 +22,7 @@ $about-lapt-width: 90px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Fjalla One';
+  font-family: "Fjalla One";
   color: $primary-color;
   text-decoration: none;
 }
@@ -37,7 +36,7 @@ nav {
   font-size: $font-main;
   height: $mobile-height;
   width: 60px;
-    
+
   #burger {
     display: inline-block;
     cursor: pointer;
@@ -52,15 +51,15 @@ nav {
     background-color: $primary-color;
     margin: 6px 0;
     transition: 0.6s;
-  }   
+  }
 
   .change .bar1 {
     transform: rotate(-45deg) translate(-9px, 6px);
-  }        
+  }
 
   .change .bar2 {
     opacity: 0;
-  }  
+  }
 
   .change .bar3 {
     transform: rotate(45deg) translate(-8px, -8px);
@@ -68,10 +67,10 @@ nav {
 
   .menu {
     display: none;
-  }  
+  }
 
   .social {
-    display: none;  
+    display: none;
   }
 
   #logo {
@@ -116,7 +115,7 @@ i:hover {
   i {
     margin: auto 15px;
   }
-  
+
   #logo {
     width: 60px;
     height: 60px;
@@ -132,10 +131,10 @@ i:hover {
     display: unset;
     display: flex;
     flex-direction: column;
-  }  
+  }
 
   .social {
-    display: unset;  
+    display: unset;
   }
 
   #logo {
@@ -148,7 +147,7 @@ i:hover {
 }
 
 main {
-  background-image: url('./Images/web-build1.png');
+  background-image: url("./Images/web-build1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
@@ -157,7 +156,7 @@ main {
   height: $mobile-height;
   width: 100vw;
   overflow-x: hidden;
-  
+
   section {
     display: grid;
     grid-template-rows: 5fr 4fr 1fr;
@@ -165,20 +164,20 @@ main {
     margin: 20px;
     margin-top: 50px;
     margin-left: 10px;
-    grid-template-areas: 
+    grid-template-areas:
       "phil phil"
       "frontend frontend"
       "btn-outline btn-primary";
-       
+
     h1 {
       grid-area: phil;
       font-size: 60px;
-    }  
+    }
 
     h2 {
       grid-area: frontend;
       font-size: 30px;
-    }  
+    }
 
     .btn-outline {
       grid-area: btn-outline;
@@ -192,7 +191,7 @@ main {
       &:hover {
         cursor: pointer;
       }
-    }  
+    }
 
     .btn-primary {
       grid-area: btn-primary;
@@ -206,11 +205,11 @@ main {
       text-align: center;
 
       &:hover {
-        color:rgb(199, 39, 39);
+        color: rgb(199, 39, 39);
       }
     }
   }
-}   
+}
 
 .about {
   display: grid;
@@ -220,7 +219,7 @@ main {
   margin-left: 10px;
   column-gap: 10px;
   row-gap: 20px;
-  grid-template-areas: 
+  grid-template-areas:
     "phil phil"
     "frontend frontend"
     "skills skillsp"
@@ -229,71 +228,71 @@ main {
     "education educationp "
     "client clientp"
     "background background"
-    "backgroundp backgroundp" ;   
+    "backgroundp backgroundp";
 }
-  h3 {
-    border: $primary-border;
-    font-size: 15px;
-    padding-top: 22px;
-    text-align: center;
-  }
+h3 {
+  border: $primary-border;
+  font-size: 15px;
+  padding-top: 22px;
+  text-align: center;
+}
 
-    .skills {
-      grid-area: skills;
-    }
+.skills {
+  grid-area: skills;
+}
 
-    .domain {
-      grid-area: domain;
-    }
+.domain {
+  grid-area: domain;
+}
 
-    .experience {
-      grid-area: experience;
-    }
+.experience {
+  grid-area: experience;
+}
 
-    .education {
-      grid-area: education;
-    }
+.education {
+  grid-area: education;
+}
 
-    .background {
-      grid-area: background;
-    }
-  
-    .client {
-      grid-area: client;
-      padding-top: 90px;
-    }
+.background {
+  grid-area: background;
+}
 
-    .skillsp {
-      grid-area: skillsp;
-      padding-top:20px;
-    }
+.client {
+  grid-area: client;
+  padding-top: 90px;
+}
 
-    .domainp {
-      grid-area: domainp;
-      padding-top:15px;
-    }
+.skillsp {
+  grid-area: skillsp;
+  padding-top: 20px;
+}
 
-    .experiencep {
-      grid-area: experiencep;
-    }
+.domainp {
+  grid-area: domainp;
+  padding-top: 15px;
+}
 
-    .educationp {
-      grid-area: educationp;
-      padding-top:5px;
-    }
+.experiencep {
+  grid-area: experiencep;
+}
 
-    .backgroundp{
-      grid-area: backgroundp;
-    }
+.educationp {
+  grid-area: educationp;
+  padding-top: 5px;
+}
 
-    .clientp{
-      grid-area: clientp;
-    }
+.backgroundp {
+  grid-area: backgroundp;
+}
 
-  p i {
-    font-size: 30px;
-    pointer-events: none;
-  }
+.clientp {
+  grid-area: clientp;
+}
+
+p i {
+  font-size: 30px;
+  pointer-events: none;
+}
 
 span {
   display: flex;
@@ -334,8 +333,8 @@ span img {
   border-radius: 3px;
 }
 
-span img{
-  margin:3px;
+span img {
+  margin: 3px;
 }
 
 .portfolio {
@@ -346,13 +345,14 @@ span img{
   margin: 20px;
   margin-top: 50px;
   margin-left: 10px;
- 
-  grid-template-areas: 
+
+  grid-template-areas:
     "phil phil "
     "frontend frontend "
     "project1 project2"
     "project3 project4"
-    "project5 project6";
+    "project5 project6"
+    "project7 project 8";
 
   article {
     border: $primary-border;
@@ -361,9 +361,9 @@ span img{
     padding: 20px;
     text-align: center;
     display: flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
     flex-direction: row;
-  
+
     .project1 {
       grid-area: project1;
     }
@@ -388,6 +388,14 @@ span img{
       grid-area: project6;
     }
 
+    .project7 {
+      grid-area: project7;
+    }
+
+    .project8 {
+      grid-area: project8;
+    }
+
     i {
       display: none;
       font-size: 25px;
@@ -397,7 +405,7 @@ span img{
 }
 
 .info {
-display:none;
+  display: none;
 }
 
 article:hover i {
@@ -405,9 +413,9 @@ article:hover i {
 }
 
 article:hover {
-  background-image: url('./Images/portfolio-black.png');
+  background-image: url("./Images/portfolio-black.png");
   background-size: cover;
-  background-position: center ;
+  background-position: center;
 
   .info {
     display: unset;
@@ -416,36 +424,48 @@ article:hover {
 }
 
 .project1 {
-  background-image: url('./Images/Intergr8.png');
+  background-image: url("./Images/Intergr8.png");
   background-size: cover;
-  background-position: center ;
+  background-position: center;
 }
 
 .project2 {
-  background-image: url('./Images/tyres.png');
+  background-image: url("./Images/tyres.png");
   background-size: cover;
-  background-position: center ;
+  background-position: center;
 }
 
 .project3 {
-  background-image: url('./Images/Punk\ IPA.png');
+  background-image: url("./Images/Punk\ IPA.png");
   background-size: cover;
-  background-position: center ;
+  background-position: center;
 }
 
 .project4 {
-  background-image: url('./Images/project1pic.png');
+  background-image: url("./Images/project1pic.png");
   background-size: cover;
-  background-position: center ;
+  background-position: center;
 }
 .project5 {
-  background-image: url('./Images/morse.png');
+  background-image: url("./Images/morse.png");
   background-size: cover;
-  background-position: center ;
+  background-position: center;
 }
 
 .project6 {
-  background-image: url('./Images/spaceships.png');
+  background-image: url("./Images/spaceships.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.project7 {
+  background-image: url("./Images/dashboard.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.project8 {
+  background-image: url("./Images/Coming-Soon.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -466,15 +486,15 @@ article:hover {
       padding-top: 17px;
     }
 
-    .domainp{
+    .domainp {
       padding-top: 5px;
     }
 
-    .client{
-      padding-top: 70px;;
+    .client {
+      padding-top: 70px;
     }
 
-    .clientp{
+    .clientp {
       padding-top: 10px;
     }
   }
@@ -485,7 +505,7 @@ article:hover {
 
   article:hover .info {
     font-size: 14px;
-    }
+  }
 
   span img {
     margin: 3px;
@@ -510,28 +530,26 @@ article:hover {
     i {
       font-size: 40px;
     }
-    
   }
 
   article:hover .info {
     font-size: 20px;
-    }
+  }
 
   .about {
-   
     h3 {
       font-size: 24px;
     }
 
-    .domainp{
+    .domainp {
       padding-top: 10px;
     }
 
-    .client{
+    .client {
       padding-top: 70px;
     }
 
-    .clientp{
+    .clientp {
       padding-top: 10px;
     }
 
@@ -541,9 +559,9 @@ article:hover {
   }
 }
 @media only screen and (min-width: $breakpoint-tablet) {
- nav #burger{
-  padding: 8px;
- }
+  nav #burger {
+    padding: 8px;
+  }
 
   main section h1 {
     font-size: 52px;
@@ -571,17 +589,16 @@ article:hover {
       height: 32vh;
       padding-top: 50px;
 
-      i{ 
+      i {
         font-size: 40px;
       }
     }
   }
   article:hover .info {
     font-size: 23px;
-    }
+  }
 
   .about {
-
     h3 {
       font-size: 25px;
     }
@@ -590,22 +607,22 @@ article:hover {
       padding-top: 5px;
     }
 
-    .client{
+    .client {
       padding-top: 85px;
     }
 
-    .clientp{
+    .clientp {
       padding-top: 14px;
     }
 
-    .background{
+    .background {
       padding-top: 10px;
     }
 
-    .backgroundp{
+    .backgroundp {
       padding-top: 15px;
     }
-  
+
     p {
       font-size: 22px;
     }
@@ -614,16 +631,15 @@ article:hover {
       font-size: 60px;
     }
   }
- 
 }
 @media only screen and (min-width: $breakpoint-laptop) {
   // main, .redline, nav{
   //   height: 1800px;
-  // } 
-   main section h1 {
+  // }
+  main section h1 {
     font-size: 75px;
   }
-  
+
   main section h2 {
     font-size: 45px;
   }
@@ -640,11 +656,11 @@ article:hover {
     height: 50px;
   }
 
-   .about {
-    height:100%;
+  .about {
+    height: 100%;
     grid-template-columns: 0.5fr 1fr 1fr;
     grid-template-rows: 150px 150px 1fr 1fr 1fr 1fr 1fr 0.5fr;
-    grid-template-areas: 
+    grid-template-areas:
       "phil phil background"
       "frontend frontend background"
       "skills skillsp backgroundp "
@@ -652,7 +668,7 @@ article:hover {
       "experience experiencep backgroundp"
       "education educationp backgroundp"
       " client clientp .";
-      
+
     h3 {
       padding-top: 60px;
       font-size: 35px;
@@ -667,16 +683,16 @@ article:hover {
       padding-top: 10px;
     }
 
-    .domainp{
-      padding-top: 50px;    
+    .domainp {
+      padding-top: 50px;
     }
 
-    .educationp{
-      padding-top: 30px;    
+    .educationp {
+      padding-top: 30px;
     }
 
-    .client{
-      padding-top: 140px;    
+    .client {
+      padding-top: 140px;
     }
   }
 
@@ -694,7 +710,7 @@ article:hover {
     width: $about-lapt-height;
     height: $about-lapt-width;
   }
-  
+
   #kip {
     height: $about-lapt-height;
     width: $about-lapt-width;
@@ -707,51 +723,50 @@ article:hover {
   .social {
     font-size: 40px;
   }
-  .client{
+  .client {
     padding-top: 150px;
   }
-  .background{
+  .background {
     padding-top: 450px;
   }
-  
-  .backgroundp{
+
+  .backgroundp {
     padding-top: 250px;
   }
-  
 
-  .portfolio{
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 150px 150px 1fr 1fr;
-      grid-template-areas: 
+  .portfolio {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 1fr 1fr;
+    grid-template-areas:
       "phil phil phil"
       "frontend frontend frontend"
       "project1 project2 ."
       "project3 project4 ."
       "project5 project6 .";
 
-      article {
-        height: 16em;
-        width:16em;
-      }
+    article {
+      height: 16em;
+      width: 16em;
+    }
 
-      article i {
-        font-size: 50px;
-      }
+    article i {
+      font-size: 50px;
+    }
 
-      article:hover .info {
-        font-size: 25px;
-        }
+    article:hover .info {
+      font-size: 25px;
+    }
   }
 }
 @media only screen and (min-width: $breakpoint-l-laptop) {
   main section h1 {
     font-size: 95px;
   }
-  
+
   main section h2 {
     font-size: 65px;
   }
-  
+
   main section .btn-primary {
     font-size: 32px;
     padding: 10px;
@@ -773,7 +788,6 @@ article:hover {
   }
 
   .portfolio {
-
     article {
       height: 20em;
       width: 20em;
@@ -785,11 +799,10 @@ article:hover {
 
     article:hover .info {
       font-size: 30px;
-      }
+    }
   }
 
   .about {
- 
     h3 {
       padding-top: 60px;
       font-size: 40px;
