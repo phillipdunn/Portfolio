@@ -441,36 +441,36 @@ article:hover {
 }
 
 .project3 {
-  background-image: url("./Images/Punk\ IPA.png");
+  background-image: url("./Images/quiz-pic.png");
   background-size: cover;
   background-position: center;
 }
 
 .project4 {
+  background-image: url("./Images/Punk\ IPA.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.project5 {
   background-image: url("./Images/project1pic.png");
   background-size: cover;
   background-position: center;
 }
-.project5 {
+.project6 {
   background-image: url("./Images/morse.png");
   background-size: cover;
   background-position: center;
 }
 
-.project6 {
+.project7 {
   background-image: url("./Images/spaceships.png");
   background-size: cover;
   background-position: center;
 }
 
-.project7 {
-  background-image: url("./Images/dashboard.png");
-  background-size: cover;
-  background-position: center;
-}
-
 .project8 {
-  background-image: url("./Images/Coming-Soon.jpg");
+  background-image: url("./Images/dashboard.png");
   background-size: cover;
   background-position: center;
 }
@@ -480,6 +480,7 @@ article:hover {
   background-size: cover;
   background-position: center;
 }
+
 @media only screen and (min-width: $breakpoint-l-mobile) {
   main section .btn-primary {
     font-size: 17px;
