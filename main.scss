@@ -351,9 +351,7 @@ span img {
     "frontend frontend "
     "project1 project2"
     "project3 project4"
-    "project5 project6"
-    "project7 project 8"
-    "project9 .";
+    "project5 project6";
 
   article {
     border: $primary-border;
@@ -387,18 +385,6 @@ span img {
 
     .project6 {
       grid-area: project6;
-    }
-
-    .project7 {
-      grid-area: project7;
-    }
-
-    .project8 {
-      grid-area: project8;
-    }
-
-    .project9 {
-      grid-area: project9;
     }
 
     i {
@@ -435,51 +421,33 @@ article:hover {
 }
 
 .project2 {
-  background-image: url("./Images/tyres.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.project3 {
   background-image: url("./Images/quiz-pic.png");
   background-size: cover;
   background-position: center;
 }
 
-.project4 {
-  background-image: url("./Images/asteroids.png");
-  background-size: cover;
-  background-position: center;
-}
-.project5 {
-  background-image: url("./Images/Punk\ IPA.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.project6 {
+.project3 {
   background-image: url("./Images/project1pic.png");
   background-size: cover;
   background-position: center;
 }
-.project7 {
+
+.project4 {
+  background-image: url("./Images/Punk\ IPA.png");
+  background-size: cover;
+  background-position: center;
+}
+.project5 {
   background-image: url("./Images/morse.png");
   background-size: cover;
   background-position: center;
 }
 
-.project8 {
-  background-image: url("./Images/spaceships.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.project9 {
+.project6 {
   background-image: url("./Images/dashboard.png");
   background-size: cover;
   background-position: center;
 }
-
 @media only screen and (min-width: $breakpoint-l-mobile) {
   main section .btn-primary {
     font-size: 17px;

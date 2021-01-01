@@ -167,7 +167,7 @@ main section {
   margin: 20px;
   margin-top: 50px;
   margin-left: 10px;
-      grid-template-areas: "phil phil" "frontend frontend" "btn-outline btn-primary";
+      grid-template-areas: "phil phil" "frontend frontend" "btn-outline btn-primary";
 }
 
 main section h1 {
@@ -232,7 +232,7 @@ main section .btn-primary:hover {
   -webkit-column-gap: 10px;
           column-gap: 10px;
   row-gap: 20px;
-      grid-template-areas: "phil phil" "frontend frontend" "skills skillsp" "domain domainp" "experience experiencep" "education educationp " "client clientp" "background background" "backgroundp backgroundp";
+      grid-template-areas: "phil phil" "frontend frontend" "skills skillsp" "domain domainp" "experience experiencep" "education educationp " "client clientp" "background background" "backgroundp backgroundp";
 }
 
 h3 {
@@ -383,7 +383,7 @@ span img {
   margin: 20px;
   margin-top: 50px;
   margin-left: 10px;
-      grid-template-areas: "phil phil " "frontend frontend " "project1 project2" "project3 project4" "project5 project6" "project7 project 8" "project9 .";
+      grid-template-areas: "phil phil " "frontend frontend " "project1 project2" "project3 project4" "project5 project6";
 }
 
 .portfolio article {
@@ -439,22 +439,6 @@ span img {
   grid-area: project6;
 }
 
-.portfolio article .project7 {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  grid-area: project7;
-}
-
-.portfolio article .project8 {
-  grid-area: project8;
-}
-
-.portfolio article .project9 {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  grid-area: project9;
-}
-
 .portfolio article i {
   display: none;
   font-size: 25px;
@@ -487,13 +471,13 @@ article:hover .info {
 }
 
 .project2 {
-  background-image: url("./Images/tyres.png");
+  background-image: url("./Images/quiz-pic.png");
   background-size: cover;
   background-position: center;
 }
 
 .project3 {
-  background-image: url("./Images/quiz-pic.png");
+  background-image: url("./Images/project1pic.png");
   background-size: cover;
   background-position: center;
 }
@@ -505,31 +489,13 @@ article:hover .info {
 }
 
 .project5 {
-  background-image: url("./Images/project1pic.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.project6 {
   background-image: url("./Images/morse.png");
   background-size: cover;
   background-position: center;
 }
 
-.project7 {
-  background-image: url("./Images/spaceships.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.project8 {
+.project6 {
   background-image: url("./Images/dashboard.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.project9 {
-  background-image: url("./Images/Coming-Soon.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -687,7 +653,7 @@ article:hover .info {
         grid-template-columns: 0.5fr 1fr 1fr;
     -ms-grid-rows: 150px 150px 1fr 1fr 1fr 1fr 1fr 0.5fr;
         grid-template-rows: 150px 150px 1fr 1fr 1fr 1fr 1fr 0.5fr;
-        grid-template-areas: "phil phil background" "frontend frontend background" "skills skillsp backgroundp " "domain domainp backgroundp" "experience experiencep backgroundp" "education educationp backgroundp" " client clientp .";
+        grid-template-areas: "phil phil background" "frontend frontend background" "skills skillsp backgroundp " "domain domainp backgroundp" "experience experiencep backgroundp" "education educationp backgroundp" " client clientp .";
   }
   .about h3 {
     padding-top: 60px;
@@ -745,7 +711,7 @@ article:hover .info {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 150px 150px 1fr 1fr;
         grid-template-rows: 150px 150px 1fr 1fr;
-        grid-template-areas: "phil phil phil" "frontend frontend frontend" "project1 project2 ." "project3 project4 ." "project5 project6 .";
+        grid-template-areas: "phil phil phil" "frontend frontend frontend" "project1 project2 ." "project3 project4 ." "project5 project6 .";
   }
   .portfolio article {
     height: 16em;
